@@ -1,0 +1,22 @@
+3、导出數據库為dbname所有表结构及表數據（不加-d）
+    mysqldump -h192.168.20.200 -uroot -p  dbname >db.sql;
+	
+	公网导出数据：mysqldump  -uboss -p  qfjs >boss.sql;
+	
+	
+	  4、导出數據库為dbname某张表(test)结构及表數據（不加-d）
+    mysqldump -h88.88.13.152 -uqfjs -p qfjs ord_order_consume>/home/ord_order_consume.sql;
+	
+	
+	mysqldump　--opt　-d　qfjs　-u　root　-p　>　xxx.sql　
+	
+	mysqldump -h 88.88.13.152 -uroot -p  -d qfjs > /home/table.sql
+	
+	2.导出数据不导出结构      mysqldump　-t　数据库名　-uroot　-p　>　xxx.sql　
+	
+	1.导出指定表的数据
+	mysqldump -t database -uusername -ppassword --tables table1 table2 table3 table4>C:\allData.sql
+	2.导出指定表的结构
+	mysqldump -d database -uusername -ppassword --tables table1 table2 table3 table4>C:\alltable.sql
+	3.导出表的数据及结构
+	mysqldump  database -uusername -ppassword --tables table1 table2 table3 table4>C:\allData.sql
